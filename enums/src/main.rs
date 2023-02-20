@@ -28,26 +28,26 @@ enum UsState{
     Montana,
     Nebraska,
     Nevada,
-    New_Hampshire,
-    New_Jersey,
-    New_Mexico,
-    New_York,
-    North_Carolina,
-    North_Dakota,
+    NewHampshire,
+    NewJersey,
+    NewMexico,
+    NewYork,
+    NorthCarolina,
+    NorthDakota,
     Ohio,
     Oklahoma,
     Oregon,
     Pennsylvania,
-    Rhode_Island,
-    South_Carolina,
-    South_Dakota,
+    RhodeIsland,
+    SouthCarolina,
+    SouthDakota,
     Tennessee,
     Texas,
     Utah,
     Vermont,
     Virginia,
     Washington,
-    West_Virginia,
+    WestVirginia,
     Wisconsin,
     Wyoming
 }
@@ -59,7 +59,7 @@ enum Coin {
     Quarter(UsState),
 }
 
-fn value_in_cents(coin: Coin) {
+fn value_in_cents(coin: Coin) -> u8{
     match coin {
         Coin::Penny => {
             println!("Lucky Penny!");
