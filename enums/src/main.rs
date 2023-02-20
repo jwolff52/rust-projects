@@ -1,5 +1,5 @@
 #[derive(Debug)]
-enum UsState{
+enum UsState {
     Alabama,
     Alaska,
     Arizona,
@@ -49,7 +49,7 @@ enum UsState{
     Washington,
     WestVirginia,
     Wisconsin,
-    Wyoming
+    Wyoming,
 }
 
 enum Coin {
@@ -59,7 +59,7 @@ enum Coin {
     Quarter(UsState),
 }
 
-fn value_in_cents(coin: Coin) -> u8{
+fn value_in_cents(coin: Coin) -> u8 {
     match coin {
         Coin::Penny => {
             println!("Lucky Penny!");
